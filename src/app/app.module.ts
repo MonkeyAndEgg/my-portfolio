@@ -8,18 +8,20 @@ import { HeaderModule } from './activities/header/header.module';
 import { SidenavComponent } from './activities/sidenav/sidenav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { ContentComponent } from './activities/content/content.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SidenavModule } from './activities/sidenav/sidenav.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidenavComponent,
     ContentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HeaderModule
+    HeaderModule,
+    SidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
